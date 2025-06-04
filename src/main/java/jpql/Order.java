@@ -3,6 +3,7 @@ package jpql;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "ORDERS") // Order 가 예약어이기에 테이블 이름을 ORDERS 로 설정
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
